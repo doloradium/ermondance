@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ErmonDance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-text-size-adjust: 100%;
+        font-family: "Montserrat", sans-serif;
+      }
+
+      img {
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .gradient {
+        background: linear-gradient(
+          90deg,
+          rgba(17, 17, 17, 1) 30%,
+          rgba(17, 17, 17, 0) 60%
+        );
+      }
+
+      .gradient-white {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(255, 255, 255, 0.05) 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-[#f1f1f1] flex flex-col gap-24 w-full h-full p-4">
+    <div
+      class="max-w-[1440px] flex flex-col gap-12 w-full gradient mx-auto p-8 overflow-hidden rounded-[2rem] rounded-br-none relative"
+    >
+      <img
+        src="./assets/images/hero1.jpg"
+        class="absolute w-full h-full top-0 left-0 object-cover z-[-1]"
+        alt="Ballet dancers"
+      />
+      <div class="flex justify-between items-start">
+        <div class="flex">
+          <div class="text-black bg-white px-4 py-2 rounded-full font-bold">
+            ERMONDANCE
+          </div>
+          <button class="border text-white border-white px-4 py-2 rounded-full">
+            Каталог
+          </button>
+          <a
+            href="#trust"
+            class="border text-white border-white px-4 py-2 rounded-full"
+          >
+            Почему именно мы
+          </a>
+        </div>
+        <div class="flex flex-col gap-4 items-end">
+          <div class="flex space-x-2">
+            <a href="#" class="bg-white p-2 rounded-full"
+              ><img src="./assets/svg/telegram.svg" class="w-5 h-5"
+            /></a>
+            <a href="#" class="bg-white p-2 rounded-full"
+              ><img
+                src="./assets/svg/whatsapp.svg"
+                alt="WhatsApp"
+                class="w-5 h-5"
+            /></a>
+            <a href="#" class="bg-white p-2 rounded-full"
+              ><img src="./assets/svg/vk.svg" alt="Telegram" class="w-5 h-5"
+            /></a>
+          </div>
+          <span class="text-sm text-white">+7 (800) 555-35-35</span>
+        </div>
+      </div>
+      <div class="w-full max-w-[500px]">
+        <p class="text-white font-bold text-2xl mb-4">Lorem ipsum dolor</p>
+        <h1 class="text-6xl text-white font-bold mb-8">
+          лучшая обувь для танцев.
+        </h1>
+        <p class="opacity-50 text-white mb-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="flex">
+        <div
+          class="gradient-white border flex flex-col gap-4 border-[#FFFFFF20] rounded-xl p-4"
+        >
+          <p class="font-bold text-white text-2xl">40+ моделей</p>
+          <p class="text-white opacity-50 w-full max-w-[200px]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+        </div>
+        <div
+          class="gradient-white border border-[#FFFFFF20] px-2 items-center justify-center flex flex-col rounded-xl"
+        >
+          <img
+            src="./assets/images/item1.jpg"
+            alt="Shoes"
+            class="rounded-full h-16 w-16 mb-[-2rem]"
+          />
+          <img
+            src="./assets/images/item2.jpg"
+            alt="Shoes"
+            class="rounded-full h-16 w-16 mb-[-2rem]"
+          />
+          <img
+            src="./assets/images/item3.jpg"
+            alt="Shoes"
+            class="rounded-full h-16 w-16"
+          />
+        </div>
+      </div>
+      <div
+        class="absolute right-0 bottom-0 bg-[#f1f1f1] mt-6 p-4 translate-x-[1rem] translate-y-[1rem] rounded-l-full"
+      >
+        <img
+          src="./assets/svg/corner.svg"
+          class="absolute left-0 bottom-4 -translate-x-2/4 h-[calc(50%_-_1rem)]"
+        />
+        <img
+          src="./assets/svg/corner.svg"
+          class="absolute right-4 top-0 -translate-y-2/4 translate-x-1/4 rotate-[270deg] -scale-x-100 scale-y-100 h-[calc(50%_-_1rem)]"
+        />
+        <button
+          class="border text-xl relative border-outer border-black px-6 py-3 rounded-full text-black"
+        >
+          Связаться
+        </button>
+      </div>
+    </div>
+    <div
+      id="trust"
+      class="max-w-[1440px] flex flex-col gap-12 mx-auto text-center"
+    >
+      <h2 class="text-4xl font-bold">почему именно мы</h2>
+      <p class="max-w-3xl text-xl mx-auto">
+        Lorem ipsum dolor sit
+        <img
+          class="h-8 inline-block rounded-full"
+          src="./assets/images/red1.jpg"
+          alt=""
+        />
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        <img
+          class="h-8 inline-block rounded-full"
+          src="./assets/images/red2.jpg"
+          alt=""
+        />
+        dolore magna aliqua.
+      </p>
+      <div class="grid grid-cols-4 gap-4 w-full">
+        <div
+          class="bg-[url('./assets/images/card1.jpg')] rounded-[2rem] flex flex-col gap-8 col-span-2 bg-center bg-cover text-white overflow-hidden relative"
+        >
+          <div class="flex flex-col items-start gap-2 p-8">
+            <div
+              class="bg-white text-black w-[50px] h-[50px] text-xl flex items-center justify-center rounded-full font-bold"
+            >
+              1
+            </div>
+            <h3 class="text-2xl font-bold">Lorem Ipsum</h3>
+          </div>
+          <p class="text-left p-8 opacity-50 border-t border-[#FFFFFF80]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div
+          class="bg-[url('./assets/images/card2.jpg')] bg-black/50 bg-blend-multiply rounded-[2rem] flex flex-col gap-8 bg-center bg-cover text-white overflow-hidden relative"
+        >
+          <div class="flex flex-col items-start gap-2 p-8">
+            <div
+              class="bg-white text-black w-[50px] h-[50px] text-xl flex items-center justify-center rounded-full font-bold"
+            >
+              2
+            </div>
+            <h3 class="text-2xl font-bold">Lorem Ipsum</h3>
+          </div>
+          <p class="text-left p-8 opacity-50 border-t border-[#FFFFFF80]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          </p>
+        </div>
+        <div
+          class="bg-[url('./assets/images/card3.jpg')] rounded-[2rem] bg-black/25 bg-blend-multiply flex flex-col gap-8 bg-center bg-cover text-white overflow-hidden relative"
+        >
+          <div class="flex flex-col items-start gap-2 p-8">
+            <div
+              class="bg-white text-black w-[50px] h-[50px] text-xl flex items-center justify-center rounded-full font-bold"
+            >
+              3
+            </div>
+            <h3 class="text-2xl font-bold">Lorem Ipsum</h3>
+          </div>
+          <p class="text-left p-8 opacity-50 border-t border-[#FFFFFF80]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
