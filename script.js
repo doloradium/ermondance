@@ -3,8 +3,8 @@ const list = [
         name: 'Туфли народные женские',
         category: 'shoes',
         description: 'Сплошная подошва, наборной каблук',
-        wholesale: 2150,
-        retail: 1720,
+        retail: 2150,
+        wholesale: 1720,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/shoes1.jpg'
@@ -13,8 +13,8 @@ const list = [
         name: 'Туфли народные женские',
         category: 'shoes',
         description: 'Раздельная подошва, наборной каблук',
-        wholesale: 2150,
-        retail: 1720,
+        retail: 2150,
+        wholesale: 1720,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/shoes2.jpg'
@@ -23,8 +23,8 @@ const list = [
         name: 'Туфли народные женские',
         category: 'shoes',
         description: 'Сплошная подошва, обтяжной каблук',
-        wholesale: 2150,
-        retail: 1720,
+        retail: 2150,
+        wholesale: 1720,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/shoes3.jpg'
@@ -33,8 +33,8 @@ const list = [
         name: 'Туфли народные женские',
         category: 'shoes',
         description: 'Раздельная подошва, обтяжной каблук',
-        wholesale: 2150,
-        retail: 1720,
+        retail: 2150,
+        wholesale: 1720,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/shoes4.jpg'
@@ -43,8 +43,8 @@ const list = [
         name: 'Туфли народные женские',
         category: 'shoes',
         description: 'Сплошная подошва до каблука, обтяжной каблук',
-        wholesale: 2150,
-        retail: 1720,
+        retail: 2150,
+        wholesale: 1720,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/shoes5.jpg'
@@ -53,8 +53,8 @@ const list = [
         name: 'Сапоги мужские',
         category: 'boots',
         description: 'Сплошная подошва, наборной каблук',
-        wholesale: 3200,
-        retail: 2560,
+        retail: 3200,
+        wholesale: 2560,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/boots1.jpg'
@@ -63,8 +63,8 @@ const list = [
         name: 'Сапоги мужские',
         category: 'boots',
         description: 'Раздельная подошва, наборной каблук',
-        wholesale: 3200,
-        retail: 2560,
+        retail: 3200,
+        wholesale: 2560,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/boots2.jpg'
@@ -73,8 +73,8 @@ const list = [
         name: 'Сапоги женские',
         category: 'boots',
         description: 'Сплошная подошва, наборной каблук',
-        wholesale: 3200,
-        retail: 2560,
+        retail: 3200,
+        wholesale: 2560,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/boots3.jpeg'
@@ -83,8 +83,8 @@ const list = [
         name: 'Сапоги женские',
         category: 'boots',
         description: 'Раздельная подошва, наборной каблук',
-        wholesale: 3200,
-        retail: 2560,
+        retail: 3200,
+        wholesale: 2560,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/boots4.jpg'
@@ -93,8 +93,8 @@ const list = [
         name: 'Полусапожки “Кадрильки”',
         category: 'quadrilles',
         description: 'Сплошная подошва, наборной каблук',
-        wholesale: 2700,
-        retail: 2040,
+        retail: 2700,
+        wholesale: 2040,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/quadrilles1.jpg'
@@ -103,8 +103,8 @@ const list = [
         name: 'Полусапожки “Кадрильки”',
         category: 'quadrilles',
         description: 'Раздельная подошва, наборной каблук',
-        wholesale: 2700,
-        retail: 2040,
+        retail: 2700,
+        wholesale: 2040,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/quadrilles2.jpg'
@@ -113,8 +113,8 @@ const list = [
         name: 'Полусапожки “Кадрильки”',
         category: 'quadrilles',
         description: 'На молнии, сплошная подошва, наборной каблук',
-        wholesale: 2700,
-        retail: 2040,
+        retail: 2700,
+        wholesale: 2040,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/quadrilles3.jpg'
@@ -123,8 +123,8 @@ const list = [
         name: 'Полусапожки “Кадрильки”',
         category: 'quadrilles',
         description: 'Раздельная подошва, обтяжной каблук',
-        wholesale: 2700,
-        retail: 2040,
+        retail: 2700,
+        wholesale: 2040,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/quadrilles4.jpg'
@@ -133,8 +133,8 @@ const list = [
         name: 'Полусапожки “Кадрильки”',
         category: 'quadrilles',
         description: 'Высокие, сплошная подошва, наборной каблук',
-        wholesale: 2700,
-        retail: 2040,
+        retail: 2700,
+        wholesale: 2040,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/quadrilles5.jpg'
@@ -143,8 +143,8 @@ const list = [
         name: 'Полусапожки “Кадрильки”',
         category: 'quadrilles',
         description: 'Сплошная подошва до каблука, обтяжной каблук',
-        wholesale: 2700,
-        retail: 2040,
+        retail: 2700,
+        wholesale: 2040,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/quadrilles6.jpg'
@@ -153,8 +153,8 @@ const list = [
         name: 'Джазовки',
         category: 'other',
         description: 'Джазовки кожанные',
-        wholesale: 950,
-        retail: 760,
+        retail: 950,
+        wholesale: 760,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/other1.jpg'
@@ -163,8 +163,8 @@ const list = [
         name: 'Джазовки',
         category: 'other',
         description: 'Джазовки высокие кожанные',
-        wholesale: 1450,
-        retail: 1160,
+        retail: 1450,
+        wholesale: 1160,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/other2.jpg'
@@ -173,8 +173,8 @@ const list = [
         name: 'Туфли бальные мужские',
         category: 'shoes',
         description: 'Джазовки высокие кожанные',
-        wholesale: 1650,
-        retail: 1320,
+        retail: 1650,
+        wholesale: 1320,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/shoes6.jpg'
@@ -183,8 +183,8 @@ const list = [
         name: 'Туфли бальные детские',
         category: 'shoes',
         description: 'Джазовки высокие кожанные',
-        wholesale: 1950,
-        retail: 1560,
+        retail: 1950,
+        wholesale: 1560,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/shoes7.jpg'
@@ -193,8 +193,8 @@ const list = [
         name: 'Ичиги',
         category: 'other',
         description: 'Джазовки высокие кожанные',
-        wholesale: 3500,
-        retail: 2800,
+        retail: 3500,
+        wholesale: 2800,
         ozon: 'https://vk.com',
         wildberries: 'https://vk.com',
         image: './assets/images/other3.jpeg'
@@ -235,21 +235,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>
             `;
-
-            // Append to Grid (Desktop)
             const gridCard = document.createElement("div");
             gridCard.innerHTML = productCard;
             gridCard.className = "h-full";
             productList.appendChild(gridCard);
-
-            // Append to Swiper (Mobile)
             const swiperSlide = document.createElement("div");
             swiperSlide.className = "swiper-slide";
             swiperSlide.innerHTML = productCard;
             swiperWrapper.appendChild(swiperSlide);
         });
-
-        // Initialize Swiper only on small screens
         if (window.innerWidth < 768) {
             if (swiperInstance) swiperInstance.destroy(true, true);
             swiperInstance = new Swiper(".swiper", {
@@ -290,7 +284,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Handle window resize
     window.addEventListener("resize", () => {
         if (window.innerWidth < 768 && !swiperInstance) {
             renderProducts("all");
@@ -301,7 +294,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Load Swiper.js
 const swiperScript = document.createElement("script");
 swiperScript.src = "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js";
 document.body.appendChild(swiperScript);

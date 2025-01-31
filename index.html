@@ -52,6 +52,15 @@
         color: black;
       }
 
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
       .swiper-pagination-bullet-active {
         background-color: red;
       }
@@ -71,136 +80,135 @@
       }
     </style>
   </head>
-  <body class="bg-[#f1f1f1] flex flex-col gap-12 md:gap-24 w-full h-full p-4">
-    <!-- Hero Section -->
-    <div
-      class="max-w-[1440px] flex flex-col gap-8 md:gap-12 w-full bg-black/75 bg-blend-multiply md:bg-blend-normal md:bg-transparent gradient mx-auto p-4 md:p-8 overflow-hidden rounded-[2rem] rounded-br-none relative"
-    >
-      <img
-        src="./assets/images/hero1.jpg"
-        class="absolute w-full h-full top-0 left-0 object-cover z-[-1]"
-        alt="Ballet dancers"
-      />
-      <div class="flex justify-between items-start gap-4">
-        <div class="flex flex-wrap">
-          <div class="text-black bg-white px-4 py-2 rounded-full font-bold">
-            ERMONDANCE
-          </div>
-          <a
-            href="#catalogue"
-            class="border hidden md:block text-white border-white px-4 py-2 rounded-full"
-          >
-            каталог
-          </a>
-          <a
-            href="#trust"
-            class="border hidden md:block text-white border-white px-4 py-2 rounded-full"
-          >
-            почему именно мы
-          </a>
-        </div>
-        <div class="flex flex-col gap-2 md:gap-4 items-end">
-          <div class="flex space-x-2">
-            <a
-              href="#"
-              class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
-              ><img
-                src="./assets/svg/telegram.svg"
-                class="w-5 h-5 md:w-6 md:h-6"
-            /></a>
-            <a
-              href="#"
-              class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
-              ><img
-                src="./assets/svg/whatsapp.svg"
-                alt="WhatsApp"
-                class="w-5 h-5 md:w-6 md:h-6"
-            /></a>
-            <a
-              href="#"
-              class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
-              ><img
-                src="./assets/svg/vk.svg"
-                alt="Telegram"
-                class="w-5 h-5 md:w-6 md:h-6"
-            /></a>
-          </div>
-          <span class="text-sm text-white">+7 (800) 555-35-35</span>
-        </div>
-      </div>
-      <div class="w-full md:max-w-[500px]">
-        <p
-          class="text-white font-bold text-xl md:text-2xl mb-4 md:text-left text-center"
-        >
-          Lorem ipsum dolor
-        </p>
-        <h1
-          class="text-4xl md:text-6xl text-white font-bold mb-8 md:text-left text-center"
-        >
-          лучшая обувь для танцев.
-        </h1>
-        <p
-          class="opacity-50 text-white md:mb-6 mb-16 text-sm md:text-left text-center"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
-      <div class="flex-row hidden md:flex">
-        <div
-          class="gradient-white border flex flex-col gap-4 border-[#FFFFFF20] rounded-xl p-4"
-        >
-          <p class="font-bold text-white text-xl md:text-2xl">40+ моделей</p>
-          <p
-            class="text-white opacity-50 w-full max-w-[200px] text-sm md:text-base"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </p>
-        </div>
-        <div
-          class="gradient-white border border-[#FFFFFF20] px-2 items-center justify-center flex flex-col rounded-xl"
-        >
-          <img
-            src="./assets/images/item1.jpg"
-            alt="Shoes"
-            class="rounded-full h-12 w-12 md:h-16 md:w-16 mb-[-1.5rem] md:mb-[-2rem]"
-          />
-          <img
-            src="./assets/images/item2.jpg"
-            alt="Shoes"
-            class="rounded-full h-12 w-12 md:h-16 md:w-16 mb-[-1.5rem] md:mb-[-2rem]"
-          />
-          <img
-            src="./assets/images/item3.jpg"
-            alt="Shoes"
-            class="rounded-full h-12 w-12 md:h-16 md:w-16"
-          />
-        </div>
-      </div>
+  <body class="bg-[#f1f1f1] flex flex-col gap-12 md:gap-24 w-full h-full">
+    <div class="p-2 w-full">
       <div
-        class="absolute right-0 bottom-0 bg-[#f1f1f1] mt-6 p-4 translate-x-[1rem] translate-y-[1rem] rounded-l-full"
+        class="max-w-[1440px] flex flex-col gap-8 md:gap-12 w-full bg-black/75 bg-blend-multiply md:bg-blend-normal md:bg-transparent gradient mx-auto p-4 md:p-8 overflow-hidden rounded-[1.5rem] rounded-br-none relative"
       >
         <img
-          src="./assets/svg/corner.svg"
-          class="absolute left-0 bottom-4 -translate-x-2/4 h-[calc(50%_-_1rem)]"
+          src="./assets/images/hero1.jpg"
+          class="absolute w-full h-full top-0 left-0 object-cover z-[-1]"
+          alt="Ballet dancers"
         />
-        <img
-          src="./assets/svg/corner.svg"
-          class="absolute right-4 top-0 -translate-y-2/4 translate-x-1/4 rotate-[270deg] -scale-x-100 scale-y-100 h-[calc(50%_-_1rem)]"
-        />
-        <a
-          href="#contacts"
-          class="border text-lg md:text-xl block relative border-outer border-black px-4 py-2 md:px-6 md:py-3 rounded-full text-black"
+        <div class="flex justify-between items-start gap-4">
+          <div class="flex flex-wrap">
+            <div class="text-black bg-white px-4 py-2 rounded-full font-bold">
+              ERMONDANCE
+            </div>
+            <a
+              href="#catalogue"
+              class="border hidden md:block text-white border-white px-4 py-2 rounded-full"
+            >
+              каталог
+            </a>
+            <a
+              href="#trust"
+              class="border hidden md:block text-white border-white px-4 py-2 rounded-full"
+            >
+              почему именно мы
+            </a>
+          </div>
+          <div class="flex flex-col gap-2 md:gap-4 items-end">
+            <div class="flex space-x-2">
+              <a
+                href="#"
+                class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
+                ><img
+                  src="./assets/svg/telegram.svg"
+                  class="w-5 h-5 md:w-6 md:h-6"
+              /></a>
+              <a
+                href="#"
+                class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
+                ><img
+                  src="./assets/svg/whatsapp.svg"
+                  alt="WhatsApp"
+                  class="w-5 h-5 md:w-6 md:h-6"
+              /></a>
+              <a
+                href="#"
+                class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
+                ><img
+                  src="./assets/svg/vk.svg"
+                  alt="Telegram"
+                  class="w-5 h-5 md:w-6 md:h-6"
+              /></a>
+            </div>
+            <span class="text-sm text-white">+7 (800) 555-35-35</span>
+          </div>
+        </div>
+        <div class="w-full md:max-w-[500px]">
+          <p
+            class="text-white font-bold text-xl md:text-2xl mb-4 md:text-left text-center"
+          >
+            Lorem ipsum dolor
+          </p>
+          <h1
+            class="text-4xl md:text-6xl text-white font-bold mb-8 md:text-left text-center"
+          >
+            лучшая обувь для танцев.
+          </h1>
+          <p
+            class="opacity-50 text-white md:mb-6 mb-16 text-sm md:text-left text-center"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="flex-row hidden md:flex">
+          <div
+            class="gradient-white border flex flex-col gap-4 border-[#FFFFFF20] rounded-xl p-4"
+          >
+            <p class="font-bold text-white text-xl md:text-2xl">40+ моделей</p>
+            <p
+              class="text-white opacity-50 w-full max-w-[200px] text-sm md:text-base"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </p>
+          </div>
+          <div
+            class="gradient-white border border-[#FFFFFF20] px-2 items-center justify-center flex flex-col rounded-xl"
+          >
+            <img
+              src="./assets/images/item1.jpg"
+              alt="Shoes"
+              class="rounded-full h-12 w-12 md:h-16 md:w-16 mb-[-1.5rem] md:mb-[-2rem]"
+            />
+            <img
+              src="./assets/images/item2.jpg"
+              alt="Shoes"
+              class="rounded-full h-12 w-12 md:h-16 md:w-16 mb-[-1.5rem] md:mb-[-2rem]"
+            />
+            <img
+              src="./assets/images/item3.jpg"
+              alt="Shoes"
+              class="rounded-full h-12 w-12 md:h-16 md:w-16"
+            />
+          </div>
+        </div>
+        <div
+          class="absolute right-0 bottom-0 bg-[#f1f1f1] mt-6 p-4 translate-x-[1rem] translate-y-[1rem] rounded-l-full"
         >
-          Связаться
-        </a>
+          <img
+            src="./assets/svg/corner.svg"
+            class="absolute left-0 bottom-4 -translate-x-2/4 h-[calc(50%_-_1rem)]"
+          />
+          <img
+            src="./assets/svg/corner.svg"
+            class="absolute right-4 top-0 -translate-y-2/4 translate-x-1/4 rotate-[270deg] -scale-x-100 scale-y-100 h-[calc(50%_-_1rem)]"
+          />
+          <a
+            href="#contacts"
+            class="border text-lg md:text-xl block relative border-outer border-black px-4 py-2 md:px-6 md:py-3 rounded-full text-black"
+          >
+            Связаться
+          </a>
+        </div>
       </div>
     </div>
-
-    <!-- Why Us Section -->
     <div
       id="trust"
-      class="max-w-[1440px] flex flex-col gap-8 md:gap-12 mx-auto text-center"
+      class="max-w-[1440px] flex flex-col gap-8 md:gap-12 p-2 mx-auto text-center"
     >
       <h2 class="text-3xl md:text-4xl font-bold">почему именно мы</h2>
       <p class="max-w-3xl text-base md:text-xl mx-auto">
@@ -218,9 +226,9 @@
         />
         dolore magna aliqua.
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-2 w-full">
         <div
-          class="bg-[url('./assets/images/card1.jpg')] rounded-[2rem] flex flex-col gap-8 md:col-span-2 bg-center bg-cover text-white overflow-hidden relative"
+          class="bg-[url('./assets/images/card1.jpg')] rounded-[1.5rem] flex flex-col gap-8 md:col-span-2 bg-center bg-cover text-white overflow-hidden relative"
         >
           <div class="flex flex-col items-start gap-2 p-8">
             <div
@@ -236,7 +244,7 @@
           </p>
         </div>
         <div
-          class="bg-[url('./assets/images/card2.jpg')] bg-black/50 bg-blend-multiply rounded-[2rem] flex flex-col gap-8 bg-center bg-cover text-white overflow-hidden relative"
+          class="bg-[url('./assets/images/card2.jpg')] bg-black/50 bg-blend-multiply rounded-[1.5rem] flex flex-col gap-8 bg-center bg-cover text-white overflow-hidden relative"
         >
           <div class="flex flex-col items-start gap-2 p-8">
             <div
@@ -251,7 +259,7 @@
           </p>
         </div>
         <div
-          class="bg-[url('./assets/images/card3.jpg')] rounded-[2rem] bg-black/25 bg-blend-multiply flex flex-col gap-8 bg-center bg-cover text-white overflow-hidden relative"
+          class="bg-[url('./assets/images/card3.jpg')] rounded-[1.5rem] bg-black/25 bg-blend-multiply flex flex-col gap-8 bg-center bg-cover text-white overflow-hidden relative"
         >
           <div class="flex flex-col items-start gap-2 p-8">
             <div
@@ -267,16 +275,14 @@
         </div>
       </div>
     </div>
-
-    <!-- Contacts Section -->
     <div
       id="contacts"
-      class="max-w-[1440px] mx-auto flex flex-col gap-8 md:gap-12 items-center w-full"
+      class="max-w-[1440px] mx-auto flex flex-col gap-8 md:gap-12 items-center w-full p-2"
     >
       <h2 class="text-3xl md:text-4xl font-bold">о нас</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 w-full">
         <div
-          class="relative bg-[url('./assets/images/info1.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 text-white rounded-[2rem] flex flex-col justify-between"
+          class="relative bg-[url('./assets/images/info1.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 text-white rounded-[1.5rem] flex flex-col justify-between"
         >
           <div class="flex flex-col items-start p-8 gap-2">
             <div
@@ -296,9 +302,9 @@
             <p><strong>ИП</strong> 194023</p>
           </div>
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-2">
           <div
-            class="text-white rounded-[2rem] px-8 py-4 bg-[url('./assets/images/info2.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 flex h-full items-center justify-between"
+            class="text-white rounded-[1.5rem] px-8 py-4 bg-[url('./assets/images/info2.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 flex h-full items-center justify-between"
           >
             <span class="text-2xl font-bold">Вконтакте</span>
             <div
@@ -308,7 +314,7 @@
             </div>
           </div>
           <div
-            class="text-white rounded-[2rem] px-8 py-4 bg-[url('./assets/images/info3.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 flex h-full items-center justify-between"
+            class="text-white rounded-[1.5rem] px-8 py-4 bg-[url('./assets/images/info3.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 flex h-full items-center justify-between"
           >
             <span class="text-2xl font-bold">Whatsapp</span>
             <div
@@ -318,7 +324,7 @@
             </div>
           </div>
           <div
-            class="text-white rounded-[2rem] px-8 py-4 bg-[url('./assets/images/info4.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 flex h-full items-center justify-between"
+            class="text-white rounded-[1.5rem] px-8 py-4 bg-[url('./assets/images/info4.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 flex h-full items-center justify-between"
           >
             <span class="text-2xl font-bold">Telegram</span>
             <div
@@ -329,7 +335,7 @@
           </div>
         </div>
         <div
-          class="text-white relative bg-[url('./assets/images/info5.jpg')] bg-cover bg-center bg-blend-multiply bg-black/50 rounded-[2rem] flex flex-col justify-between"
+          class="text-white relative bg-[url('./assets/images/info5.jpg')] bg-cover bg-center bg-blend-multiply bg-black/50 rounded-[1.5rem] flex flex-col justify-between"
         >
           <div class="flex flex-col items-start p-8 gap-2">
             <div
@@ -351,15 +357,21 @@
         </div>
       </div>
     </div>
-
-    <!-- Catalogue Section -->
     <div
       id="catalogue"
       class="max-w-[1440px] w-full flex items-center flex-col gap-8 md:gap-12 mx-auto"
     >
       <h1 class="text-3xl md:text-4xl font-bold">каталог</h1>
-      <div class="flex w-full flex-col md:flex-row justify-between gap-4">
-        <div class="flex flex-wrap">
+      <div
+        class="flex w-full no-scrollbar overflow-scroll justify-between md:gap-4"
+      >
+        <button
+          class="px-4 py-2 ml-2 md:ml-0 transition duration-500 ease-in-out border border-[#000000] rounded-full bg-black text-white filter-btn"
+          data-category="all"
+        >
+          все
+        </button>
+        <div class="flex">
           <button
             class="px-4 py-2 border transition duration-500 ease-in-out border-[#000000] rounded-full filter-btn"
             data-category="shoes"
@@ -379,44 +391,32 @@
             кадрильки
           </button>
           <button
-            class="px-4 py-2 transition duration-500 ease-in-out border border-[#000000] rounded-full filter-btn"
+            class="px-4 py-2 mr-2 md:mr-0 transition duration-500 ease-in-out border border-[#000000] rounded-full filter-btn"
             data-category="other"
           >
             другое
           </button>
         </div>
-        <button
-          class="px-4 py-2 transition duration-500 ease-in-out border border-[#000000] rounded-full bg-black text-white filter-btn"
-          data-category="all"
-        >
-          все
-        </button>
       </div>
-      <!-- Swiper Container for Small Screens -->
       <div class="block md:hidden w-full">
-        <div class="swiper">
+        <div class="swiper p-2">
           <div id="swiper-wrapper" class="swiper-wrapper"></div>
-          <!-- Swiper Navigation -->
           <div
-            class="swiper-button-next bg-white right-2 border border-black/10 rounded-full h-10 w-10"
+            class="swiper-button-next bg-white right-4 border border-black/10 rounded-full h-10 w-10"
           ></div>
           <div
-            class="swiper-button-prev bg-white left-2 border border-black/10 rounded-full h-10 w-10"
+            class="swiper-button-prev bg-white left-4 border border-black/10 rounded-full h-10 w-10"
           ></div>
           <div class="swiper-pagination relative mt-4"></div>
         </div>
       </div>
-
-      <!-- Grid Layout for Large Screens -->
       <div
         id="product-list"
-        class="hidden md:grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        class="hidden md:grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2"
       ></div>
     </div>
-
-    <!-- Footer -->
     <footer
-      class="w-full max-w-[1440px] text-sm md:text-base rounded-[2rem] overflow-hidden m-auto relative"
+      class="w-[calc(100%_-_1rem)] max-w-[1440px] text-sm md:text-base rounded-[1.5rem] overflow-hidden m-auto !m-2 relative"
     >
       <img
         src="./assets/images/footer.jpg"
@@ -434,7 +434,7 @@
             ERMONDANCE
           </div>
           <nav
-            class="flex md:gap-12 order-3 md:order-2 justify-between w-full self-center items-center"
+            class="flex md:gap-12 md:w-fit justify-between order-last md:order-none w-full self-center items-center"
           >
             <a href="#catalogue" class="hover:text-gray-300 transition"
               >каталог</a
@@ -481,7 +481,7 @@
             <p><span class="font-bold">ИП</span> 194023</p>
           </div>
           <p
-            class="md:absolute md:-translate-x-2/4 order-3 text-center m-auto md:left-2/4"
+            class="md:absolute w-full md:-translate-x-2/4 order-3 text-center m-auto md:left-2/4"
           >
             © 2025, Все права защищены
           </p>
