@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
@@ -39,6 +44,16 @@
           rgba(17, 17, 17, 1) 30%,
           rgba(17, 17, 17, 0) 60%
         );
+      }
+
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        scale: 0.25;
+        color: black;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: red;
       }
 
       @media screen and (max-width: 768px) {
@@ -377,9 +392,25 @@
           все
         </button>
       </div>
+      <!-- Swiper Container for Small Screens -->
+      <div class="block md:hidden w-full">
+        <div class="swiper">
+          <div id="swiper-wrapper" class="swiper-wrapper"></div>
+          <!-- Swiper Navigation -->
+          <div
+            class="swiper-button-next bg-white right-2 border border-black/10 rounded-full h-10 w-10"
+          ></div>
+          <div
+            class="swiper-button-prev bg-white left-2 border border-black/10 rounded-full h-10 w-10"
+          ></div>
+          <div class="swiper-pagination relative mt-4"></div>
+        </div>
+      </div>
+
+      <!-- Grid Layout for Large Screens -->
       <div
         id="product-list"
-        class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        class="hidden md:grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
       ></div>
     </div>
 
