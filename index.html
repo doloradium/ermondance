@@ -41,6 +41,12 @@
         );
       }
 
+      @media screen and (max-width: 768px) {
+        .gradient {
+          background: transparent;
+        }
+      }
+
       .gradient-white {
         background: linear-gradient(
           180deg,
@@ -50,64 +56,89 @@
       }
     </style>
   </head>
-  <body class="bg-[#f1f1f1] flex flex-col gap-24 w-full h-full p-4">
+  <body class="bg-[#f1f1f1] flex flex-col gap-12 md:gap-24 w-full h-full p-4">
+    <!-- Hero Section -->
     <div
-      class="max-w-[1440px] flex flex-col gap-12 w-full gradient mx-auto p-8 overflow-hidden rounded-[2rem] rounded-br-none relative"
+      class="max-w-[1440px] flex flex-col gap-8 md:gap-12 w-full bg-black/75 bg-blend-multiply md:bg-blend-normal md:bg-transparent gradient mx-auto p-4 md:p-8 overflow-hidden rounded-[2rem] rounded-br-none relative"
     >
       <img
         src="./assets/images/hero1.jpg"
         class="absolute w-full h-full top-0 left-0 object-cover z-[-1]"
         alt="Ballet dancers"
       />
-      <div class="flex justify-between items-start">
-        <div class="flex">
+      <div class="flex justify-between items-start gap-4">
+        <div class="flex flex-wrap">
           <div class="text-black bg-white px-4 py-2 rounded-full font-bold">
             ERMONDANCE
           </div>
-          <button class="border text-white border-white px-4 py-2 rounded-full">
-            Каталог
-          </button>
+          <a
+            href="#catalogue"
+            class="border hidden md:block text-white border-white px-4 py-2 rounded-full"
+          >
+            каталог
+          </a>
           <a
             href="#trust"
-            class="border text-white border-white px-4 py-2 rounded-full"
+            class="border hidden md:block text-white border-white px-4 py-2 rounded-full"
           >
-            Почему именно мы
+            почему именно мы
           </a>
         </div>
-        <div class="flex flex-col gap-4 items-end">
+        <div class="flex flex-col gap-2 md:gap-4 items-end">
           <div class="flex space-x-2">
-            <a href="#" class="bg-white p-2 rounded-full"
-              ><img src="./assets/svg/telegram.svg" class="w-5 h-5"
+            <a
+              href="#"
+              class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
+              ><img
+                src="./assets/svg/telegram.svg"
+                class="w-5 h-5 md:w-6 md:h-6"
             /></a>
-            <a href="#" class="bg-white p-2 rounded-full"
+            <a
+              href="#"
+              class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
               ><img
                 src="./assets/svg/whatsapp.svg"
                 alt="WhatsApp"
-                class="w-5 h-5"
+                class="w-5 h-5 md:w-6 md:h-6"
             /></a>
-            <a href="#" class="bg-white p-2 rounded-full"
-              ><img src="./assets/svg/vk.svg" alt="Telegram" class="w-5 h-5"
+            <a
+              href="#"
+              class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
+              ><img
+                src="./assets/svg/vk.svg"
+                alt="Telegram"
+                class="w-5 h-5 md:w-6 md:h-6"
             /></a>
           </div>
           <span class="text-sm text-white">+7 (800) 555-35-35</span>
         </div>
       </div>
-      <div class="w-full max-w-[500px]">
-        <p class="text-white font-bold text-2xl mb-4">Lorem ipsum dolor</p>
-        <h1 class="text-6xl text-white font-bold mb-8">
+      <div class="w-full md:max-w-[500px]">
+        <p
+          class="text-white font-bold text-xl md:text-2xl mb-4 md:text-left text-center"
+        >
+          Lorem ipsum dolor
+        </p>
+        <h1
+          class="text-4xl md:text-6xl text-white font-bold mb-8 md:text-left text-center"
+        >
           лучшая обувь для танцев.
         </h1>
-        <p class="opacity-50 text-white mb-6">
+        <p
+          class="opacity-50 text-white md:mb-6 mb-16 text-sm md:text-left text-center"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <div class="flex">
+      <div class="flex-row hidden md:flex">
         <div
           class="gradient-white border flex flex-col gap-4 border-[#FFFFFF20] rounded-xl p-4"
         >
-          <p class="font-bold text-white text-2xl">40+ моделей</p>
-          <p class="text-white opacity-50 w-full max-w-[200px]">
+          <p class="font-bold text-white text-xl md:text-2xl">40+ моделей</p>
+          <p
+            class="text-white opacity-50 w-full max-w-[200px] text-sm md:text-base"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </p>
         </div>
@@ -117,17 +148,17 @@
           <img
             src="./assets/images/item1.jpg"
             alt="Shoes"
-            class="rounded-full h-16 w-16 mb-[-2rem]"
+            class="rounded-full h-12 w-12 md:h-16 md:w-16 mb-[-1.5rem] md:mb-[-2rem]"
           />
           <img
             src="./assets/images/item2.jpg"
             alt="Shoes"
-            class="rounded-full h-16 w-16 mb-[-2rem]"
+            class="rounded-full h-12 w-12 md:h-16 md:w-16 mb-[-1.5rem] md:mb-[-2rem]"
           />
           <img
             src="./assets/images/item3.jpg"
             alt="Shoes"
-            class="rounded-full h-16 w-16"
+            class="rounded-full h-12 w-12 md:h-16 md:w-16"
           />
         </div>
       </div>
@@ -142,36 +173,39 @@
           src="./assets/svg/corner.svg"
           class="absolute right-4 top-0 -translate-y-2/4 translate-x-1/4 rotate-[270deg] -scale-x-100 scale-y-100 h-[calc(50%_-_1rem)]"
         />
-        <button
-          class="border text-xl relative border-outer border-black px-6 py-3 rounded-full text-black"
+        <a
+          href="#contacts"
+          class="border text-lg md:text-xl block relative border-outer border-black px-4 py-2 md:px-6 md:py-3 rounded-full text-black"
         >
           Связаться
-        </button>
+        </a>
       </div>
     </div>
+
+    <!-- Why Us Section -->
     <div
       id="trust"
-      class="max-w-[1440px] flex flex-col gap-12 mx-auto text-center"
+      class="max-w-[1440px] flex flex-col gap-8 md:gap-12 mx-auto text-center"
     >
-      <h2 class="text-4xl font-bold">почему именно мы</h2>
-      <p class="max-w-3xl text-xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-bold">почему именно мы</h2>
+      <p class="max-w-3xl text-base md:text-xl mx-auto">
         Lorem ipsum dolor sit
         <img
-          class="h-8 inline-block rounded-full"
+          class="h-6 md:h-8 inline-block rounded-full"
           src="./assets/images/red1.jpg"
           alt=""
         />
         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
         <img
-          class="h-8 inline-block rounded-full"
+          class="h-6 md:h-8 inline-block rounded-full"
           src="./assets/images/red2.jpg"
           alt=""
         />
         dolore magna aliqua.
       </p>
-      <div class="grid grid-cols-4 gap-4 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-4 w-full">
         <div
-          class="bg-[url('./assets/images/card1.jpg')] rounded-[2rem] flex flex-col gap-8 col-span-2 bg-center bg-cover text-white overflow-hidden relative"
+          class="bg-[url('./assets/images/card1.jpg')] rounded-[2rem] flex flex-col gap-8 md:col-span-2 bg-center bg-cover text-white overflow-hidden relative"
         >
           <div class="flex flex-col items-start gap-2 p-8">
             <div
@@ -218,5 +252,217 @@
         </div>
       </div>
     </div>
+
+    <!-- Contacts Section -->
+    <div
+      id="contacts"
+      class="max-w-[1440px] mx-auto flex flex-col gap-8 md:gap-12 items-center w-full"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold">о нас</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
+        <div
+          class="relative bg-[url('./assets/images/info1.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 text-white rounded-[2rem] flex flex-col justify-between"
+        >
+          <div class="flex flex-col items-start p-8 gap-2">
+            <div
+              class="bg-white h-[50px] w-[50px] flex justify-center items-center rounded-full"
+            >
+              <img
+                src="./assets/svg/home.svg"
+                class="w-6 h-6"
+                alt="Home Icon"
+              />
+            </div>
+            <h3 class="text-2xl font-bold">Об организации</h3>
+          </div>
+          <div class="border-t border-white/50 p-8">
+            <p><strong>ОГРН</strong> 12908312689749163</p>
+            <p><strong>КПП</strong> 234891230831</p>
+            <p><strong>ИП</strong> 194023</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <div
+            class="text-white rounded-[2rem] px-8 py-4 bg-[url('./assets/images/info2.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 flex h-full items-center justify-between"
+          >
+            <span class="text-2xl font-bold">Вконтакте</span>
+            <div
+              class="bg-white h-[50px] w-[50px] flex justify-center items-center rounded-full"
+            >
+              <img src="./assets/svg/link.svg" class="w-5 h-5" />
+            </div>
+          </div>
+          <div
+            class="text-white rounded-[2rem] px-8 py-4 bg-[url('./assets/images/info3.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 flex h-full items-center justify-between"
+          >
+            <span class="text-2xl font-bold">Whatsapp</span>
+            <div
+              class="bg-white h-[50px] w-[50px] flex justify-center items-center rounded-full"
+            >
+              <img src="./assets/svg/link.svg" class="w-5 h-5" />
+            </div>
+          </div>
+          <div
+            class="text-white rounded-[2rem] px-8 py-4 bg-[url('./assets/images/info4.jpg')] bg-cover bg-center bg-blend-multiply bg-black/25 flex h-full items-center justify-between"
+          >
+            <span class="text-2xl font-bold">Telegram</span>
+            <div
+              class="bg-white h-[50px] w-[50px] flex justify-center items-center rounded-full"
+            >
+              <img src="./assets/svg/link.svg" class="w-5 h-5" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-white relative bg-[url('./assets/images/info5.jpg')] bg-cover bg-center bg-blend-multiply bg-black/50 rounded-[2rem] flex flex-col justify-between"
+        >
+          <div class="flex flex-col items-start p-8 gap-2">
+            <div
+              class="bg-white h-[50px] w-[50px] flex justify-center items-center rounded-full"
+            >
+              <img
+                src="./assets/svg/phone.svg"
+                class="w-6 h-6"
+                alt="Phone Icon"
+              />
+            </div>
+            <h3 class="text-2xl font-bold">Номера телефонов</h3>
+          </div>
+          <div class="p-8 border-t border-white/50">
+            <p>+7 (800) 555-35-35</p>
+            <p>+7 (800) 555-35-35</p>
+            <p>+7 (800) 555-35-35</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Catalogue Section -->
+    <div
+      id="catalogue"
+      class="max-w-[1440px] w-full flex items-center flex-col gap-8 md:gap-12 mx-auto"
+    >
+      <h1 class="text-3xl md:text-4xl font-bold">каталог</h1>
+      <div class="flex w-full flex-col md:flex-row justify-between gap-4">
+        <div class="flex flex-wrap">
+          <button
+            class="px-4 py-2 border transition duration-500 ease-in-out border-[#000000] rounded-full filter-btn"
+            data-category="shoes"
+          >
+            туфли
+          </button>
+          <button
+            class="px-4 py-2 transition duration-500 ease-in-out border border-[#000000] rounded-full filter-btn"
+            data-category="boots"
+          >
+            сапоги
+          </button>
+          <button
+            class="px-4 py-2 transition duration-500 ease-in-out border border-[#000000] rounded-full filter-btn"
+            data-category="quadrilles"
+          >
+            кадрильки
+          </button>
+          <button
+            class="px-4 py-2 transition duration-500 ease-in-out border border-[#000000] rounded-full filter-btn"
+            data-category="other"
+          >
+            другое
+          </button>
+        </div>
+        <button
+          class="px-4 py-2 transition duration-500 ease-in-out border border-[#000000] rounded-full bg-black text-white filter-btn"
+          data-category="all"
+        >
+          все
+        </button>
+      </div>
+      <div
+        id="product-list"
+        class="grid w-full grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+      ></div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w-full max-w-[1440px] text-sm md:text-base rounded-[2rem] overflow-hidden m-auto relative"
+    >
+      <img
+        src="./assets/images/footer.jpg"
+        class="w-full h-full object-cover absolute top-0 left-0 z-[-1]"
+      />
+      <div
+        class="w-full backdrop-blur-lg flex-col justify-center gap-8 relative p-4 md:p-8 text-white flex justify-between items-center"
+      >
+        <div
+          class="flex flex-wrap md:flex-row w-full justify-between items-center gap-4 gap-y-8"
+        >
+          <div
+            class="bg-white text-black w-min font-bold px-4 py-2 rounded-full"
+          >
+            ERMONDANCE
+          </div>
+          <nav
+            class="flex md:gap-12 order-3 md:order-2 justify-between w-full self-center items-center"
+          >
+            <a href="#catalogue" class="hover:text-gray-300 transition"
+              >каталог</a
+            >
+            <a href="#trust" class="hover:text-gray-300 transition"
+              >почему именно мы</a
+            >
+            <a href="#contacts" class="hover:text-gray-300 transition">о нас</a>
+          </nav>
+          <div class="text-right flex flex-col gap-4">
+            <div class="flex space-x-2">
+              <a
+                href="#"
+                class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
+                ><img
+                  src="./assets/svg/telegram.svg"
+                  class="w-5 h-5 md:w-6 md:h-6"
+              /></a>
+              <a
+                href="#"
+                class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
+                ><img
+                  src="./assets/svg/whatsapp.svg"
+                  alt="WhatsApp"
+                  class="w-5 h-5 md:w-6 md:h-6"
+              /></a>
+              <a
+                href="#"
+                class="bg-white w-[40px] h-[40px] md:w-[50px] md:h-[50px] flex items-center justify-center rounded-full"
+                ><img
+                  src="./assets/svg/vk.svg"
+                  alt="Telegram"
+                  class="w-5 h-5 md:w-6 md:h-6"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex w-full flex-wrap justify-between gap-y-8 items-center md:items-end"
+        >
+          <div>
+            <p><span class="font-bold">ОГРН</span> 12908312689749163</p>
+            <p><span class="font-bold">КПП</span> 234891230831</p>
+            <p><span class="font-bold">ИП</span> 194023</p>
+          </div>
+          <p
+            class="md:absolute md:-translate-x-2/4 order-3 text-center m-auto md:left-2/4"
+          >
+            © 2025, Все права защищены
+          </p>
+          <div>
+            <p>+7 (800) 555-35-35</p>
+            <p>+7 (800) 555-35-35</p>
+            <p>+7 (800) 555-35-35</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
